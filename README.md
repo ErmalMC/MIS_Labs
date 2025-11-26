@@ -18,4 +18,20 @@ Overdue Exams
 
 
 
+# Lab 2 - Recipe Display
 
+This lab is about using an API of TheMealDB to take recipes and list them sorted by catagory and showing every recipe individually with detailed instructions and a youtube link, also having a random meal button in the front page.
+
+
+Front Page
+
+![Front Page](Lab_Pictures/Front_Page.png)
+
+
+Beef Category Recipes
+
+![Beef Category](Lab_Pictures/Beef_Category.png)
+
+Recipe Instructions
+
+![Recipe Instructions](Lab_Pictures/Recipe_Instructions.png)
