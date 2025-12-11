@@ -4,7 +4,9 @@ import '../services/api_service.dart';
 import '../models/category.dart';
 import '../widgets/category_card.dart';
 import 'category_screen.dart';
-import 'meal_detail_screen.dart'; 
+import 'meal_detail_screen.dart';
+import 'favorites_screen.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -81,7 +83,16 @@ class _HomeScreenState extends State<HomeScreen> {
           IconButton(
             onPressed: _openRandom,
             icon: const Icon(Icons.shuffle),
-          )
+          ),
+          IconButton(
+            icon: const Icon(Icons.favorite),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const FavoritesScreen()),
+              );
+            },
+          ),
         ],
       ),
       body: loading
